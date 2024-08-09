@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="hud-item"><p>Score</p>
+        <h1 class="hud-main-text" id="score">0</h1>
+    </div>
+
+    <div id="game" onclick="jump()">
+        <img id="back" src="imageshtml1/minecraft back2.png">
+        <img id="character" src="imageshtml1/steve minecraft1.png">
+        <img id="block" src="imageshtml1/spikes2.png">
+
+        <h7 id="over">Game Over</h7>
+
+        <div id="heartbar">
+            <img id="heart1"  src="imageshtml1/minecraft heart.png">
+            <img id="heart2"  src="imageshtml1/minecraft heart.png">
+            <img id="heart3"  src="imageshtml1/minecraft heart.png">
+        </div>
+    </div>
+
+    <div id="player">
+        <li>
+        <h6 class="player-head">Select Player</h6>
+        <button id="btnsteve" class="player-btn">Steve</button>
+        <button id="btnalex" class="player-btn">Alex</button>
+        </li>
+    </div>
+    <audio id="backmusic"><source src="music/minecraft back song.mp3" type="audio/mp3"/></audio>
+    <audio id="jumpsong">
+        <source src="music/jump sound.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="oof">
+        <source src="music/oof sound.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
